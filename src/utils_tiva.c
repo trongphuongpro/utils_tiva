@@ -1,9 +1,9 @@
-//! \file utils.c
+//! \file utils_tiva.c
 //! \brief Utility functions, structs for Tiva c.
 //! \author Nguyen Trong Phuong (aka trongphuongpro)
 //! \date 2020 April 8
 
-#include "utils.h"
+#include "utils_tiva.h"
 
 #include <stdbool.h>
 
@@ -13,6 +13,8 @@
 
 volatile uint16_t counter = 0;
 
+
+static void systick_isr();
 
 void systick_isr() {
     if (counter > 0) {

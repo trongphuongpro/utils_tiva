@@ -1,4 +1,4 @@
-//! \file utils.h
+//! \file utils_tiva.h
 //! \brief Utility functions, structs for Tiva c.
 //! \author Nguyen Trong Phuong (aka trongphuongpro)
 //! \date 2020 April 8
@@ -12,7 +12,24 @@ extern "C" {
 
 #include <stdint.h>
 
+//! \brief Data type that contains GPIO port and pin.
+//!
+typedef struct PortPin {
+    uint32_t base; //!< Memory base of GPIO port
+    uint8_t pin; //!< GPIO pin
+} PortPin_t;
+
+
+//! \brief Initialize SysTick.
+//! \return nothing.
+//!
 void delay_init();
+
+
+//! \brief Delay in millisecond.
+//! \param ms millisecond.
+//! \return nothing.
+//!
 void delay_ms(uint16_t ms);
 
 #ifdef __cplusplus
