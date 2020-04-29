@@ -3,8 +3,8 @@
 //! \author Nguyen Trong Phuong (aka trongphuongpro)
 //! \date 2020 April 8
 
-#ifndef __UTILS__
-#define __UTILS__
+#ifndef __UTILS_TIVA__
+#define __UTILS_TIVA__
 
 #ifdef __cplusplus
 extern "C" {
