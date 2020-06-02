@@ -4,7 +4,8 @@ set(TARGET utils)
 
 #-----------------------------------------------------------------------------#
 
-add_library(${TARGET} STATIC src/utils.c)
+add_library(${TARGET} STATIC src/utils_tiva.c
+					${TIVAWARE_PATH}/utils/uartstdio.c)
 
 target_link_libraries(${TARGET} ${TIVAWARE_PATH}/driverlib/gcc/libdriver.a
 )

@@ -23,7 +23,7 @@ typedef struct PortPin {
 //! \brief Initialize SysTick.
 //! \return nothing.
 //!
-void delay_init();
+void delay_init(void);
 
 
 //! \brief Delay in millisecond.
@@ -31,6 +31,13 @@ void delay_init();
 //! \return nothing.
 //!
 void delay_ms(uint16_t ms);
+
+
+//! \brief Configure UART0 for console output
+//! \return nothing.
+//!
+void console_init(uint32_t baudrate);
+
 
 #ifdef __cplusplus
 }
