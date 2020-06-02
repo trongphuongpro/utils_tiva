@@ -12,8 +12,6 @@
 #include "driverlib/pin_map.h" 
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
-#include "driverlib/uart.h"
-#include "utils/uartstdio.h"
 
 
 volatile uint16_t counter = 0;

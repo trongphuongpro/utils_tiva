@@ -11,7 +11,8 @@ extern "C" {
 #endif
 
 #include <stdint.h>
-
+#include "utils/uartstdio.h"
+    
 //! \brief Data type that contains GPIO port and pin.
 //!
 typedef struct PortPin {
